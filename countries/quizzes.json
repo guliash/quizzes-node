@@ -1,0 +1,558 @@
+[
+  {
+    "name": "The Great Sphinx of Giza",
+    "country": "Egypt",
+    "href": "https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza",
+    "facts": [
+      "It is the oldest known monumental sculpture in Egypt and is commonly believed to have been built by ancient Egyptians of the Old Kingdom during the reign of the Pharaoh Khafre (c. 2558–2532 BC)."
+    ],
+    "position": {
+      "lat": 29.9752654,
+      "lng": 31.1367871
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Great_Sphinx_Closeup.JPG/640px-Great_Sphinx_Closeup.JPG",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Great_Sphinx_Closeup.JPG",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://en.wikipedia.org/wiki/User:Hamish2k",
+          "link": "Hamish2k"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Moscow Kremlin",
+    "country": "Russia",
+    "href": "https://en.wikipedia.org/wiki/Moscow_Kremlin",
+    "facts": [
+      "Built 1482 - 1495.",
+      "The name Kremlin means \"fortress inside a city\".",
+      "The complex serves as the official residence of the President of the Russian Federation."
+    ],
+    "position": {
+      "lat": 55.752002,
+      "lng": 37.617424
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kremlin_from_Bolshoy_kamenny_bridge.jpg/640px-Kremlin_from_Bolshoy_kamenny_bridge.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Kremlin_from_Bolshoy_kamenny_bridge.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://alexandergusev.com",
+          "link": "Alexandergusev"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Spring Temple Buddha",
+    "country": "China",
+    "href": "https://en.wikipedia.org/wiki/Spring_Temple_Buddha",
+    "facts": [
+      "It is the tallest statue in the world (128 metres)."
+    ],
+    "position": {
+      "lat": 33.775013,
+      "lng": 112.450941
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Spring_Temple_Buddha_picturing_Vairocana%2C_in_Lushan_County%2C_Henan%2C_China.png",
+      "attribution": {
+        "resource": {
+          "href": "https://upload.wikimedia.org/wikipedia/commons/8/82/Spring_Temple_Buddha_picturing_Vairocana%2C_in_Lushan_County%2C_Henan%2C_China.png",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Zgpdszz",
+          "link": "Zgpdszz"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Stonehenge",
+    "country": "England",
+    "href": "https://en.wikipedia.org/wiki/Stonehenge",
+    "facts": [
+      "Archaeologists believe it was constructed from 3000 BC to 2000 BC."
+    ],
+    "position": {
+      "lat": 51.178754,
+      "lng": -1.826319
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Stonehenge_on_27.01.08.jpg/640px-Stonehenge_on_27.01.08.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Stonehenge_on_27.01.08.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://en.wikipedia.org/wiki/User:Mavratti",
+          "link": "Mavratti"
+        },
+        "license": {
+          "href": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "link": "CC0 1.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Buddhas of Bamiyan",
+    "country": "Afghanistan",
+    "href": "https://en.wikipedia.org/wiki/Buddhas_of_Bamiyan",
+    "facts": [],
+    "position": {
+      "lat": 34.831958,
+      "lng": 67.826705
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Afghanistan_Statua_di_Budda_1.jpg/407px-Afghanistan_Statua_di_Budda_1.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Afghanistan_Statua_di_Budda_1.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Marco_Bonavoglia",
+          "link": "Marco Bonavoglia"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Ananuri",
+    "country": "Georgia",
+    "href": "https://en.wikipedia.org/wiki/Ananuri",
+    "facts": [],
+    "position": {
+      "lat": 42.163826,
+      "lng": 44.702892
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Georgian_Fortress_Ananuri.jpg/640px-Georgian_Fortress_Ananuri.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Georgian_Fortress_Ananuri.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Odessicus",
+          "link": "Vadim Tolbatov"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "id": "7",
+    "name": "Hattusa",
+    "country": "Turkey",
+    "href": "https://en.wikipedia.org/wiki/Hattusa",
+    "facts": [],
+    "position": {
+      "lat": 40.023329,
+      "lng": 34.614853
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Lion_Gate%2C_Hattusa_01.jpg/640px-Lion_Gate%2C_Hattusa_01.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Lion_Gate,_Hattusa_01.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Bgag",
+          "link": "Bernard Gagnon"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Giant's Causeway",
+    "country": "Northern Ireland",
+    "href": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
+    "facts": [],
+    "position": {
+      "lat": 55.240716,
+      "lng": -6.511555
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Giant%27s_Causeway_%2814%29.JPG/640px-Giant%27s_Causeway_%2814%29.JPG",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Giant%27s_Causeway_(14).JPG",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Chmee2",
+          "link": "Chmee2"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by/3.0/deed.en",
+          "link": "CC BY 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Paracas Candelabra",
+    "country": "Peru",
+    "href": "https://en.wikipedia.org/wiki/Paracas_Candelabra",
+    "facts": [],
+    "position": {
+      "lat": -13.789571,
+      "lng": -76.316142
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Candelabro_de_Paracas_%287521861232%29.jpg/640px-Candelabro_de_Paracas_%287521861232%29.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Candelabro_de_Paracas_(7521861232).jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "http://www.flickr.com/people/79721788@N00?rb=1",
+          "link": "David Stanley"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by/2.0/deed.en",
+          "link": "CC BY 2.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Maiden Tower",
+    "country": "Azerbaijan",
+    "href": "https://en.wikipedia.org/wiki/Maiden_Tower_(Baku)",
+    "facts": [],
+    "position": {
+      "lat": 40.366167,
+      "lng": 49.83725
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Baku_Maiden_Tower_2010.jpg/640px-Baku_Maiden_Tower_2010.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Baku_Maiden_Tower_2010.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Gulustan",
+          "link": "Gulustan"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Al-Azhar University",
+    "country": "Egypt",
+    "href": "https://en.wikipedia.org/wiki/Al-Azhar_University",
+    "facts": [],
+    "position": {
+      "lat": 30.057478,
+      "lng": 31.314427
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Al-Azhar_%28inside%29_2006.jpg/450px-Al-Azhar_%28inside%29_2006.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Al-Azhar_(inside)_2006.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "",
+          "link": "Tentoila"
+        },
+        "license": {
+          "href": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "link": "CC0 1.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Mada'in Saleh",
+    "country": "Saudi Arabia",
+    "href": "https://en.wikipedia.org/wiki/Mada%27in_Saleh",
+    "facts": [],
+    "position": {
+      "lat": 26.801331,
+      "lng": 37.970499
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Qasr_al_Farid.JPG/640px-Qasr_al_Farid.JPG",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Qasr_al_Farid.JPG",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "",
+          "link": "Richard.hargas"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "link": "CC BY-SA 4.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Buda Castle",
+    "country": "Hungary",
+    "href": "https://en.wikipedia.org/wiki/Buda_Castle",
+    "facts": [],
+    "position": {
+      "lat": 47.496212,
+      "lng": 19.039420
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/River_Beatrice_%28ship%2C_2007%29_005.jpg/640px-River_Beatrice_%28ship%2C_2007%29_005.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://www.flickr.com/photos/79653482@N00/6111500857",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "http://www.flickr.com/people/79653482@N00?rb=1",
+          "link": "Cristian Bortes"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by/2.0/deed.en",
+          "link": "CC BY 2.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Urnes Stave Church",
+    "country": "Norway",
+    "href": "https://en.wikipedia.org/wiki/Urnes_Stave_Church",
+    "facts": [],
+    "position": {
+      "lat": 61.298180,
+      "lng": 7.322504
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Urnes_Stave_Church_1.jpg/640px-Urnes_Stave_Church_1.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://www.flickr.com/photos/12584677@N06/1362202964",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://www.flickr.com/photos/12584677@N06",
+          "link": "Leo-setä"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by/2.0/deed.en",
+          "link": "CC BY 2.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Chichen Itza",
+    "country": "Mexico",
+    "href": "https://en.wikipedia.org/wiki/Chichen_Itza",
+    "facts": [],
+    "position": {
+      "lat": 20.684154,
+      "lng": -88.567730
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Chichen_Itza_3.jpg/640px-Chichen_Itza_3.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Chichen_Itza_3.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Dschwen",
+          "link": "Daniel Schwen"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/4.0/deed.en",
+          "link": "CC BY-SA 4.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "Нарын-кала",
+    "country": "Russia",
+    "href": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%80%D1%8B%D0%BD-%D0%BA%D0%B0%D0%BB%D0%B0",
+    "facts": [],
+    "position": {
+      "lat": 42.052038,
+      "lng": 48.273651
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D1%85%D0%BE%D0%B4_%D0%B2_%D1%86%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C_%D0%9D%D0%B0%D1%80%D1%8B%D0%BD-%D0%9A%D0%B0%D0%BB%D0%B0.jpg/640px-%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D1%8B%D0%B9_%D0%B2%D1%85%D0%BE%D0%B4_%D0%B2_%D1%86%D0%B8%D1%82%D0%B0%D0%B4%D0%B5%D0%BB%D1%8C_%D0%9D%D0%B0%D1%80%D1%8B%D0%BD-%D0%9A%D0%B0%D0%BB%D0%B0.jpg",
+      "attribution": {
+        "resource": {
+          "href": "http://sulim27.livejournal.com/38236.html",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "",
+          "link": "Сулим Кудусов"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Leshan Giant Buddha",
+    "country": "China",
+    "href": "https://en.wikipedia.org/wiki/Leshan_Giant_Buddha",
+    "facts": [],
+    "position": {
+      "lat": 29.544005,
+      "lng": 103.771601
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Leshan_Buddha_Statue_View.JPG/640px-Leshan_Buddha_Statue_View.JPG",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Leshan_Buddha_Statue_View.JPG",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "",
+          "link": "Ariel Steiner"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/2.5/deed.en",
+          "link": "CC BY-SA 2.5"
+        }
+      }
+    }
+  },
+  {
+    "name": "Saint Hripsime Church",
+    "country": "Armenia",
+    "href": "https://en.wikipedia.org/wiki/Saint_Hripsime_Church",
+    "facts": [],
+    "position": {
+      "lat": 40.166945,
+      "lng": 44.309699
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/S._Hripsime_exterior.JPG/640px-S._Hripsime_exterior.JPG",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:S._Hripsime_exterior.JPG",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Liveon001",
+          "link": "Liveon001"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Holy Trinity Column in Olomouc",
+    "country": "Czech Republic",
+    "href": "https://en.wikipedia.org/wiki/Holy_Trinity_Column_in_Olomouc",
+    "facts": [],
+    "position": {
+      "lat": 49.593867,
+      "lng": 17.250324
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Holy_Trinity_Column.jpg/450px-Holy_Trinity_Column.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Holy_Trinity_Column.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "https://commons.wikimedia.org/wiki/User:Snek01",
+          "link": "Michal Maňas"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
+          "link": "CC BY-SA 3.0"
+        }
+      }
+    }
+  },
+  {
+    "name": "The Temple of the Inscriptions",
+    "country": "Mexico",
+    "href": "https://en.wikipedia.org/wiki/Temple_of_the_Inscriptions",
+    "facts": [
+      "The Temple of Inscriptions was finished a short time after 683.",
+      "The structure was specifically built as the funerary monument for K'inich Janaab' Pakal, ajaw or ruler of Palenque in the 7th century whose reign over the polity lasted almost 70 years.",
+      "The Temple of Inscriptions gets its name from three hieroglyphic tablets, known as the East Tablet, the Central Tablet, and the West Tablet, on the temple's inner walls. These tablets emphasize the idea that events that happened in the past will be repeated on the same calendar date.",
+      "Pakal’s death mask is another extraordinary artifact found in the tomb. The face of the mask is made entirely of jade, while the eyes consist of shells, mother of pearl, and obsidian."
+    ],
+    "position": {
+      "lat": 17.483558,
+      "lng": -92.047094
+    },
+    "image": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Palenque_temple_1.jpg/640px-Palenque_temple_1.jpg",
+      "attribution": {
+        "resource": {
+          "href": "https://commons.wikimedia.org/wiki/File:Palenque_temple_1.jpg",
+          "link": "Photo"
+        },
+        "author": {
+          "href": "",
+          "link": "Jan Harenburg"
+        },
+        "license": {
+          "href": "https://creativecommons.org/licenses/by/3.0/deed.en",
+          "link": "CC BY 3.0"
+        }
+      }
+    }
+  }
+]
