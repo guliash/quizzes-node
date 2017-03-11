@@ -1,0 +1,8 @@
+{
+  "name": "quizzes",
+  "version": "v1.0.0",
+  "author": {
+    "name": "Artem Gilmudinov"
+  },
+  "main": "index.js"
+}
