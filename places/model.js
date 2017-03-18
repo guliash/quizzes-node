@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const countrySchema = mongoose.Schema({
+const placeSchema = mongoose.Schema({
   name: String,
   country: String,
   href: String,
@@ -23,6 +23,6 @@ const countrySchema = mongoose.Schema({
       }
     }
   }
-}, { collection: 'countries' });
+}, { collection: 'places' });
 
-module.exports = mongoose.model('Country', countrySchema);
+module.exports = mongoose.model('Place', placeSchema);

@@ -1,5 +1,5 @@
 const app = require('express')();
-app.set('views', ['./users/views', './countries/views']);
+app.set('views', ['./users/views', './places/views']);
 app.set('view engine', 'pug');
 
 const bodyParser = require('body-parser');
@@ -16,7 +16,7 @@ app.use(require('express-session')({
 }));
 
 require('mongoose').connect('mongodb://localhost:27017/quizzes');
-const Country = require('./countries/model');
+const Country = require('./places/model');
 const User = require('./users/model');
 
 const passport = require('passport');
@@ -46,7 +46,7 @@ passport.deserializeUser((id, cb) => {
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/quizzes/countries/', require('./countries/router'));
+app.use('/quizzes/places/', require('./places/router'));
 app.use('/quizzes/users/', require('./users/router'));
 
 app.get('/quizzes', (req, res) => {
