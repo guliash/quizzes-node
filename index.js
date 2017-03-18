@@ -1,9 +1,9 @@
-var app = require('express')();
+const app = require('express')();
 app.set('views', ['./users/views', './countries/views']);
 app.set('view engine', 'pug');
 
-var bodyParser = require('body-parser');
-var config = require('./config');
+const bodyParser = require('body-parser');
+const config = require('./config');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(require('express-session')({
@@ -15,19 +15,18 @@ app.use(require('express-session')({
   saveUninitialized: false
 }));
 
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/quizzes');
-var Country = require('./countries/model');
-var User = require('./users/model');
+require('mongoose').connect('mongodb://localhost:27017/quizzes');
+const Country = require('./countries/model');
+const User = require('./users/model');
 
-var passport = require('passport');
-var Strategy = require('passport-local').Strategy;
+const passport = require('passport');
+const Strategy = require('passport-local').Strategy;
 passport.use(new Strategy({
     usernameField: 'username',
     passwordField: 'password',
   },
-  function(username, password, cb) {
-    User.findOne({ username: username }, function(err, user) {
+  (username, password, cb) => {
+    User.findOne({ username: username }, (err, user) => {
       if (err) { return cb(err); }
       if (!user) { return cb(null, false); }
       if (user.password != password) { return cb(null, false); }
@@ -35,11 +34,11 @@ passport.use(new Strategy({
     });
   }
 ));
-passport.serializeUser(function(user, cb) {
+passport.serializeUser((user, cb) => {
   cb(null, user.id);
 });
-passport.deserializeUser(function(id, cb) {
-  User.findById(id, function(err, user) {
+passport.deserializeUser((id, cb) => {
+  User.findById(id, (err, user) => {
     if(err) { return cb(err); }
     cb(null, user);
   });
@@ -50,9 +49,9 @@ app.use(passport.session());
 app.use('/quizzes/countries/', require('./countries/router'));
 app.use('/quizzes/users/', require('./users/router'));
 
-app.get('/quizzes', function(req, res) {
+app.get('/quizzes', (req, res) => {
   res.send('Hello world');
 });
-app.listen(3000, function() {
-  console.log('Quizzes server started on port 3000.')
+app.listen(3000, () => {
+  console.log('Quizzes server started on port 3000.');
 });

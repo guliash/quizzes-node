@@ -1,7 +1,7 @@
-var router = require('express').Router();
+const router = require('express').Router();
 
-router.get('/', function(req, res) {
-  Country.find(function(err, countries) {
+router.get('/', (req, res) => {
+  Country.find((err, countries) => {
     if(err) {
       res.status(500).send();
     } else {
@@ -10,12 +10,11 @@ router.get('/', function(req, res) {
   });
 });
 
-router.post('/', function(req, res) {
+router.post('/', (req, res) => {
 
 });
 
-router.get('/add', function(req, res) {
-  console.log(req.user);
+router.get('/add', (req, res) => {
   if (!req.user) {
     return res.redirect('/quizzes/users/login');
   }

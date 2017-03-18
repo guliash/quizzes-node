@@ -2,7 +2,23 @@ doctype html
 html
   head
     title='Add enigma'
+    style
+      include ../../static/css/base.css
+      include ./add.css
   body
     form(action='/quizzes/countries', method='post')
-      input(type='text' name='name' placeholder='name')
-      input(type='submit' value='Add')
+      input(type='text' name='enigma_name' placeholder='Enigma name').input
+      input(type='text' name='enigma_country' placeholder='Enigma country').input
+      input(type='text' name='enigma_href' placeholder='Enigma href').input
+      .input_block
+        input(type='text' name='enigma_lat' placeholder='Enigma lat')
+        input(type='text' name='enigma_lng' placeholder='Enigma lng')#enigma_lng
+      input(type='file' name='image').input
+      input(type='text' name='image_source' placeholder='Image source').input
+      .input_block
+        input(type='text' name='image_author_name' placeholder='Image author name')
+        input(type='text' name='image_author_href' placeholder='Image author href')#image_author_href
+      .input_block
+        input(type='text' name='image_license_name' placeholder='Image license name')
+        input(type='text' name='image_license_href' placeholder='Image license href')#image_license_href
+      input(type='submit' value='Add').input

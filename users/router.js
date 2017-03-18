@@ -1,7 +1,7 @@
-var router = require('express').Router();
-var passport = require('passport');
+const router = require('express').Router();
+const passport = require('passport');
 
-router.get('/login', function(req, res) {
+router.get('/login', (req, res) => {
   res.render('login');
 });
 
@@ -11,7 +11,7 @@ router.post('/login', passport.authenticate(
   )
 );
 
-router.get('/logout', function(req, res) {
+router.get('/logout', (req, res) => {
   req.logout();
   res.send('logout');
 });

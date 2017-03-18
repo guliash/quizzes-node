@@ -1,6 +1,6 @@
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var countrySchema = mongoose.Schema({
+const countrySchema = mongoose.Schema({
   name: String,
   country: String,
   href: String,
@@ -25,6 +25,4 @@ var countrySchema = mongoose.Schema({
   }
 }, { collection: 'countries' });
 
-var Country = mongoose.model('Country', countrySchema);
-
-module.exports = Country;
+module.exports = mongoose.model('Country', countrySchema);
