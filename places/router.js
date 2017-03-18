@@ -1,7 +1,8 @@
 const router = require('express').Router();
+const Place = require('./model');
 
 router.get('/', (req, res) => {
-  Country.find((err, countries) => {
+  Place.find((err, countries) => {
     if(err) {
       res.status(500).send();
     } else {

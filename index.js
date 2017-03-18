@@ -16,7 +16,6 @@ app.use(require('express-session')({
 }));
 
 require('mongoose').connect('mongodb://localhost:27017/quizzes');
-const Country = require('./places/model');
 const User = require('./users/model');
 
 const passport = require('passport');
