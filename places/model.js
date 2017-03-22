@@ -7,19 +7,16 @@ const placeSchema = mongoose.Schema({
   facts: [String],
   position: { lat: Number, lng: Number },
   image: {
-    url: String,
+    href: String,
     attribution: {
-      resource: {
-        href: String,
-        link: String
-      },
+      source: String,
       author: {
-        href: String,
-        link: String
+        name: String,
+        href: String
       },
       license: {
-        href: String,
-        link: String
+        name: String,
+        href: String
       }
     }
   }
