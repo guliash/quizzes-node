@@ -2,7 +2,7 @@ const config = require('../config');
 const router = require('express').Router();
 const Place = require('./model');
 
-const upload = require('multer')({ dest: 'uploads/' });
+const upload = require('multer')({ dest: '../uploads/' });
 
 router.get('/', (req, res) => {
   Place.find((err, countries) => {
