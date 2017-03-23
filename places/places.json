@@ -44,11 +44,11 @@
         "source": "https://commons.wikimedia.org/wiki/File:Kremlin_from_Bolshoy_kamenny_bridge.jpg",
         "author": {
           "href": "https://alexandergusev.com",
-          "link": "Alexandergusev"
+          "name": "Alexandergusev"
         },
         "license": {
           "href": "https://creativecommons.org/licenses/by-sa/3.0/deed.en",
-          "link": "CC BY-SA 3.0"
+          "name": "CC BY-SA 3.0"
         }
       }
     }
@@ -81,7 +81,7 @@
   },
   {
     "name": "Stonehenge",
-    "country": "England",
+    "country": "United Kingdom",
     "href": "https://en.wikipedia.org/wiki/Stonehenge",
     "facts": [
       "Archaeologists believe it was constructed from 3000 BC to 2000 BC."
@@ -154,7 +154,6 @@
     }
   },
   {
-    "id": "7",
     "name": "Hattusa",
     "country": "Turkey",
     "href": "https://en.wikipedia.org/wiki/Hattusa",
@@ -180,7 +179,7 @@
   },
   {
     "name": "The Giant's Causeway",
-    "country": "Northern Ireland",
+    "country": "United Kingdom",
     "href": "https://en.wikipedia.org/wiki/Giant%27s_Causeway",
     "facts": [],
     "position": {
@@ -444,7 +443,7 @@
   },
   {
     "name": "The Holy Trinity Column in Olomouc",
-    "country": "Czech Republic",
+    "country": "Czechia",
     "href": "https://en.wikipedia.org/wiki/Holy_Trinity_Column_in_Olomouc",
     "facts": [],
     "position": {

@@ -1,18 +1,18 @@
 doctype html
 html
   head
-    title='Add enigma'
+    title='Add place'
     style
       include ../../static/css/base.css
       include ./add.css
   body
     form(action='/quizzes/places' method='post' enctype='multipart/form-data')
-      input(type='text' name='enigma_name' placeholder='Enigma name').input
-      input(type='text' name='enigma_country' placeholder='Enigma country').input
-      input(type='text' name='enigma_href' placeholder='Enigma href').input
+      input(type='text' name='place_name' placeholder='Place name').input
+      input(type='text' name='place_country' placeholder='Place country').input
+      input(type='text' name='place_href' placeholder='Place href').input
       .input_block
-        input(type='text' name='enigma_lat' placeholder='Enigma lat')
-        input(type='text' name='enigma_lng' placeholder='Enigma lng')#enigma_lng
+        input(type='text' name='place_lat' placeholder='Place lat')
+        input(type='text' name='place_lng' placeholder='Place lng')#place_lng
       input(type='file' name='image').input
       input(type='text' name='image_source' placeholder='Image source').input
       .input_block

@@ -16,13 +16,13 @@ router.get('/', (req, res) => {
 
 router.post('/', upload.single('image'), (req, res) => {
   const place = new Place({
-    name: req.body.enigma_name,
-    country: req.body.enigma_country,
-    href: req.body.enigma_href,
+    name: req.body.place_name,
+    country: req.body.place_country,
+    href: req.body.place_href,
     facts: [],
     position: {
-      lat: req.body.enigma_lat,
-      lng: req.body.enigma_lng
+      lat: req.body.place_lat,
+      lng: req.body.place_lng
     },
     image: {
       href: config.HOST + '/quizzes/uploads/' + req.file.filename,
