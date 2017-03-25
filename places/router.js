@@ -1,16 +1,15 @@
 const config = require('../config');
 const router = require('express').Router();
-const Place = require('./model');
+const Place = require('./model').Place;
+const Country = require('./model').Country;
 
 const upload = require('multer')({ dest: '../uploads/' });
 
 router.get('/', (req, res) => {
-  Place.find((err, countries) => {
-    if(err) {
-      res.status(500).send();
-    } else {
-      res.send(countries);
-    }
+  Place.find().then(countries => {
+    res.send(countries);
+  }, error => {
+    res.status(500).send();
   });
 });
 
@@ -39,13 +38,12 @@ router.post('/', upload.single('image'), (req, res) => {
       }
     }
   });
-  place.save((err) => {
-    if (err) {
-      res.status(500).send();
-    } else {
+  place.save().then(place => {
       res.send('Ok');
+    }, error => {
+      res.status(500).send(error);
     }
-  });
+  );
 });
 
 router.get('/add', (req, res) => {

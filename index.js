@@ -15,7 +15,9 @@ app.use(require('express-session')({
   saveUninitialized: false
 }));
 
-require('mongoose').connect('mongodb://localhost:27017/quizzes');
+const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost:27017/quizzes');
 const User = require('./users/model');
 
 const passport = require('passport');
