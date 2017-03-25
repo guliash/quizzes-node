@@ -30,7 +30,7 @@ passport.use(new Strategy({
     User.findOne({ username: username }, (err, user) => {
       if (err) { return cb(err); }
       if (!user) { return cb(null, false); }
-      if (user.password != password) { return cb(null, false); }
+      if (user.password !== password) { return cb(null, false); }
       return cb(null, user);
     });
   }
@@ -47,12 +47,10 @@ passport.deserializeUser((id, cb) => {
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.use('/quizzes/places/', require('./places/router'));
-app.use('/quizzes/users/', require('./users/router'));
+app.use('/quizzes/places', require('./places/router'));
+app.use('/quizzes/users', require('./users/router'));
+app.use('/quizzes/api/places', require('./places/api'));
 
-app.get('/quizzes', (req, res) => {
-  res.send('Hello world');
-});
 app.listen(3000, () => {
   console.log('Quizzes server started on port 3000.');
 });

@@ -5,24 +5,24 @@ const countrySchema = mongoose.Schema({
   region: String,
   subregion: String
 }, { collection: 'countries' });
-
 const Country = mongoose.model('Country', countrySchema);
 
 const placeSchema = mongoose.Schema({
   name: String,
   country: {
     type: String,
-    validate: value => new Promise((resolve, reject) => {
+    validate: {
+      isAsync: true,
+      validator: function(value, cb) {
         Country.find().then(countries => {
-            resolve(
-              countries.filter(country => country.name == value).length != 0
-            );
+            cb(countries.filter(country => country.name === value).length !== 0);
           }, error => {
-            reject(error);
+            cb(false);
           }
         );
-      }
-    )
+      },
+      message: 'Can\'t find {VALUE} country'
+    }
   },
   href: String,
   facts: [String],
@@ -42,12 +42,10 @@ const placeSchema = mongoose.Schema({
     }
   }
 }, { collection: 'places' });
-
 const Place = mongoose.model('Place', placeSchema);
 
 const models = {
   Place: Place,
   Country: Country
 };
-
 module.exports = models;

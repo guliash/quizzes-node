@@ -1,4 +1,8 @@
 {
   "esversion": 6,
-  "varstmt": true
+  "varstmt": true,
+  "curly": true,
+  "eqeqeq": true,
+  "undef": true,
+  "node": true
 }
