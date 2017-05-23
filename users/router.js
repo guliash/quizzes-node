@@ -7,7 +7,7 @@ router.get('/login', (req, res) => {
 
 router.post('/login', passport.authenticate(
     'local',
-    { successRedirect: '/quizzes', failureRedirect: '/quizzes/users/login' }
+    { successReturnToOrRedirect: '/quizzes/places/add', failureRedirect: '/quizzes/users/login' }
   )
 );
 

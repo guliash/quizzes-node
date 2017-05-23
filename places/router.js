@@ -1,10 +1,15 @@
 const router = require('express').Router();
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 
-router.get('/add', (req, res) => {
-  if (!req.user) {
-    return res.status(401).send();
-  }
-  res.render('add');
-});
+router.get('/add',
+  ensureLoggedIn('/quizzes/users/login'),
+  (req, res) => {
+    res.render('add');
+  });
+
+router.get('/edit',
+  ensureLoggedIn('/quizzes/users/login'),
+  (req, res) => {
+  });
 
 module.exports = router;
