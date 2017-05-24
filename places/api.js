@@ -64,33 +64,27 @@ router.post('/edit/:id',
   ensureLoggedIn('/quizzes/users/login'),
   upload.single('image'),
   (req, res) => {
-    const updatedPlace = {
-      name: req.body.place_name,
-      country: req.body.place_country,
-      href: req.body.place_href,
-      facts: [],
-      position: {
-        lat: req.body.place_lat,
-        lng: req.body.place_lng
-      },
-      image: {
-        attribution: {
-          source: req.body.image_source,
-          author: {
-            name: req.body.image_author_name,
-            href: req.body.image_author_href
-          },
-          license: {
-            name: req.body.image_license_name,
-            href: req.body.image_license_href
-          }
+    Place.findById(req.params.id)
+      .then(place => {
+        if (!place) {
+          return res.status(500).send('Could not find place with id ' + req.params.id);
         }
-      }
-    };
-    if (req.file) {
-      updatedPlace.image.href = config.HOST + '/quizzes/uploads/' + req.file.filename;
-    }
-    Place.findByIdAndUpdate(req.params.id, { $set: updatedPlace }, { runValidators: true })
+        place.name = req.body.place_name;
+        place.country = req.body.place_country;
+        place.href = req.body.place_href;
+        place.facts = [];
+        place.position.lat = req.body.place_lat;
+        place.position.lng = req.body.place_lng;
+        place.image.attribution.source = req.body.image_source;
+        place.image.attribution.author.name = req.body.image_author_name;
+        place.image.attribution.author.href = req.body.image_author_href;
+        place.image.attribution.license.name = req.body.image_license_name;
+        place.image.attribution.license.href = req.body.image_license_href;
+        if (req.file) {
+          place.image.href = config.HOST + '/quizzes/uploads/' + req.file.filename;
+        }
+        return place.save();
+      })
       .then(place => {
         res.send(place);
       }, error => {
