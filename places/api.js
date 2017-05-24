@@ -2,6 +2,7 @@ const config = require('../config');
 const express = require('express');
 const upload = require('multer')({ dest: '../uploads/' });
 const router = express.Router();
+const ensureLoggedIn = require('connect-ensure-login').ensureLoggedIn;
 
 const Place = require('./model').Place;
 
@@ -22,40 +23,80 @@ router.get('/:id', (req, res) => {
     });
 });
 
-router.post('/', upload.single('image'), (req, res) => {
-  if (!req.user) {
-    return res.status(401).send();
-  }
-  const place = new Place({
-    name: req.body.place_name,
-    country: req.body.place_country,
-    href: req.body.place_href,
-    facts: [],
-    position: {
-      lat: req.body.place_lat,
-      lng: req.body.place_lng
-    },
-    image: {
-      href: config.HOST + '/quizzes/uploads/' + req.file.filename,
-      attribution: {
-        source: req.body.image_source,
-        author: {
-          name: req.body.image_author_name,
-          href: req.body.image_author_href
-        },
-        license: {
-          name: req.body.image_license_name,
-          href: req.body.image_license_href
+router.post('/add',
+  ensureLoggedIn('/quizzes/users/login'),
+  upload.single('image'),
+  (req, res) => {
+    const place = new Place({
+      name: req.body.place_name,
+      country: req.body.place_country,
+      href: req.body.place_href,
+      facts: [],
+      position: {
+        lat: req.body.place_lat,
+        lng: req.body.place_lng
+      },
+      image: {
+        href: config.HOST + '/quizzes/uploads/' + req.file.filename,
+        attribution: {
+          source: req.body.image_source,
+          author: {
+            name: req.body.image_author_name,
+            href: req.body.image_author_href
+          },
+          license: {
+            name: req.body.image_license_name,
+            href: req.body.image_license_href
+          }
         }
       }
+    });
+    place.save().then(place => {
+        res.send(place);
+      }, error => {
+        res.status(500).send(error);
+      }
+    );
+  }
+);
+
+router.post('/edit/:id',
+  ensureLoggedIn('/quizzes/users/login'),
+  upload.single('image'),
+  (req, res) => {
+    const updatedPlace = {
+      name: req.body.place_name,
+      country: req.body.place_country,
+      href: req.body.place_href,
+      facts: [],
+      position: {
+        lat: req.body.place_lat,
+        lng: req.body.place_lng
+      },
+      image: {
+        attribution: {
+          source: req.body.image_source,
+          author: {
+            name: req.body.image_author_name,
+            href: req.body.image_author_href
+          },
+          license: {
+            name: req.body.image_license_name,
+            href: req.body.image_license_href
+          }
+        }
+      }
+    };
+    if (req.file) {
+      updatedPlace.image.href = config.HOST + '/quizzes/uploads/' + req.file.filename;
     }
-  });
-  place.save().then(place => {
-      res.send(place);
-    }, error => {
-      res.status(500).send(error);
-    }
-  );
-});
+    Place.findByIdAndUpdate(req.params.id, { $set: updatedPlace }, { runValidators: true })
+      .then(place => {
+        res.send(place);
+      }, error => {
+        res.status(500).send(error);
+      });
+  }
+);
 
 module.exports = router;

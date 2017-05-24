@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title='Edit place'
+    style
+      include ../../static/css/base.css
+      include ./edit.css
+  body
+    form(action='/quizzes/api/places/edit/'+place.id method='post' enctype='multipart/form-data')
+      input(type='text' name='place_name' placeholder='Place name' value=place.name).input
+      input(type='text' name='place_country' placeholder='Place country' value=place.country).input
+      input(type='text' name='place_href' placeholder='Place href' value=place.href).input
+      .input_block
+        input(type='text' name='place_lat' placeholder='Place lat' value=place.position.lat)
+        input(type='text' name='place_lng' placeholder='Place lng' value=place.position.lng)#place_lng
+      input(type='file' name='image').input
+      input(type='text' name='image_source' placeholder='Image source' value=place.image.attribution.source).input
+      .input_block
+        input(type='text' name='image_author_name' placeholder='Image author name' value=place.image.attribution.author.name)
+        input(type='text' name='image_author_href' placeholder='Image author href' value=place.image.attribution.author.href)#image_author_href
+      .input_block
+        input(type='text' name='image_license_name' placeholder='Image license name' value=place.image.attribution.license.name)
+        input(type='text' name='image_license_href' placeholder='Image license href' value=place.image.attribution.license.href)#image_license_href
+      input(type='submit' value='Edit').input

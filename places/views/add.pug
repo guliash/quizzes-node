@@ -6,7 +6,7 @@ html
       include ../../static/css/base.css
       include ./add.css
   body
-    form(action='/quizzes/api/places' method='post' enctype='multipart/form-data')
+    form(action='/quizzes/api/places/add' method='post' enctype='multipart/form-data')
       input(type='text' name='place_name' placeholder='Place name').input
       input(type='text' name='place_country' placeholder='Place country').input
       input(type='text' name='place_href' placeholder='Place href').input
