@@ -10,6 +10,7 @@ html
       input(type='text' name='place_name' placeholder='Place name' value=place.name).input
       input(type='text' name='place_country' placeholder='Place country' value=place.country).input
       input(type='text' name='place_href' placeholder='Place href' value=place.href).input
+      textarea(name ='place_description' placeholder='Place description' rows='15' cols='50').input #{place.description}
       .input_block
         input(type='text' name='place_lat' placeholder='Place lat' value=place.position.lat)
         input(type='text' name='place_lng' placeholder='Place lng' value=place.position.lng)#place_lng

@@ -25,7 +25,8 @@ const placeSchema = mongoose.Schema({
     }
   },
   href: String,
-  facts: [String],
+  description: String,
+  facts: [String], //need this for compatibility
   position: { lat: Number, lng: Number },
   image: {
     href: String,

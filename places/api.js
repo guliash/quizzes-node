@@ -31,6 +31,7 @@ router.post('/add',
       name: req.body.place_name,
       country: req.body.place_country,
       href: req.body.place_href,
+      description: req.body.place_description,
       facts: [],
       position: {
         lat: req.body.place_lat,
@@ -72,7 +73,7 @@ router.post('/edit/:id',
         place.name = req.body.place_name;
         place.country = req.body.place_country;
         place.href = req.body.place_href;
-        place.facts = [];
+        place.description = req.body.place_description;
         place.position.lat = req.body.place_lat;
         place.position.lng = req.body.place_lng;
         place.image.attribution.source = req.body.image_source;
